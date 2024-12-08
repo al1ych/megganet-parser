@@ -1,10 +1,6 @@
 [build]
   functions = "functions"
 
-[[plugins]]
-  package = "@netlify/plugin-functions-core"
-
-# Планировщик для вызова функции раз в час
 [[functions]]
   name = "parser"
   schedule = "@hourly"
