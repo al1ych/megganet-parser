@@ -6,7 +6,7 @@ const { addToCache, isInCache } = require("./cache")
 async function getPostMeta(url, city) {
   try {
     // Устанавливаем таймаут в 3 секунды
-    const { data } = await axios.get(url, { timeout: 10 * 1000 }) // Таймаут в миллисекундах
+    const { data } = await axios.get(url, { timeout: 2 * 1000 }) // Таймаут в миллисекундах
     const $ = cheerio.load(data)
     const news = []
 

@@ -1,8 +1,8 @@
 const fs = require("fs")
 const path = require("path")
 
-// Путь к файлу кеша
-const CACHE_FILE = path.resolve(__dirname, "cache.json")
+// Путь к файлу кеша в /tmp
+const CACHE_FILE = path.join("/tmp", "cache.json")
 
 // Инициализация файла кеша, если его нет
 function initCache() {
