@@ -115,7 +115,7 @@ async function submitPost(post) {
 }
 
 // Основная функция
-export async function parse() {
+async function parse() {
   const websites = [
     { url: "https://www.kp.ru/", city: undefined },
     { url: "https://belarus.kp.ru/", city: "Беларусь" },
@@ -232,3 +232,5 @@ export async function parse() {
     }
   }
 }
+
+module.exports = { parse }

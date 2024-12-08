@@ -3,7 +3,7 @@
 
 const { parse } = require("../mainParser")
 
-module.exports.parser = async () => {
+exports.handler = async () => {
   try {
     await parse() // Вызов функции вашего парсера
     return {
