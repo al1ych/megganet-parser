@@ -14,7 +14,7 @@ exports.handler = async () => {
     console.error("Error starting parser:", e)
     return {
       statusCode: 500,
-      body: JSON.stringify({ error: "Ошибка выполнения парсера" }),
+      body: JSON.stringify({ error: e }),
     }
   }
 }
