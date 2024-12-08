@@ -115,9 +115,7 @@ async function submitPost(post) {
 }
 
 // Основная функция
-;(async () => {
-  // локал на тест
-  // while (true) {
+export async function parse() {
   const websites = [
     { url: "https://www.kp.ru/", city: undefined },
     { url: "https://belarus.kp.ru/", city: "Беларусь" },
@@ -233,5 +231,4 @@ async function submitPost(post) {
       }
     }
   }
-  // }
-})()
+}
