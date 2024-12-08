@@ -1,6 +1,2 @@
 [build]
   functions = "functions"
-
-[[functions]]
-  name = "parser"
-  schedule = "@hourly"
